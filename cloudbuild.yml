@@ -44,7 +44,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'push',
-      'us-east4-docker.pkg.dev/sleepr-394721/payments/ production',
+      'us-east4-docker.pkg.dev/sleepr-394721/payments/production',
     ]
 
   # notifications

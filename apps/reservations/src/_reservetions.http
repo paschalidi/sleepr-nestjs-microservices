@@ -20,7 +20,7 @@ Content-Type: application/json
 
 
 ### GET all
-GET http://localhost:3000/reservations
+GET http://localhost:32315/reservations
 Accept: application/json
 
 ### GET one

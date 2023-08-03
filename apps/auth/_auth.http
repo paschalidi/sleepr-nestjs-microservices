@@ -1,0 +1,24 @@
+### Create user
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+  "email": "paschalidi@outlook.com",
+  "password": "Password12312312!"
+}
+
+
+### Login
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "email": "paschalidi@outlook.com",
+  "password": "Password12312312!"
+}
+
+
+
+
+
+

@@ -25,16 +25,19 @@ spec:
                   key: connectionString
 
             - name: PORT
-              value: '3004'
+              value: "3004"
 
             - name: AUTH_SERVICE_HOST
               value: auth-tcp
 
             - name: AUTH_SERVICE_PORT
-              value: '3002'
+              value: "3002"
 
             - name: PAYMENTS_SERVICE_HOST
               value: payments
 
             - name: PAYMENTS_SERVICE_PORT
-              value: '3001'
+              value: "3001"
+
+          ports:
+            - containerPort: 3004

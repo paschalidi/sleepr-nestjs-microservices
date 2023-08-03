@@ -1,0 +1,43 @@
+### Create reservation
+POST http://localhost:3000/reservations
+Content-Type: application/json
+
+{
+  "endDate": "12/25/2018",
+  "startDate": "12/20/2018",
+  "placeId": "MexicoPalace",
+  "invoiceId": "555",
+  "charge": {
+    "amount": 170,
+    "card": {
+      "cvc": "123",
+      "exp_year": 2034,
+      "exp_month": 12,
+      "number": "4242424242424242"
+    }
+  }
+}
+
+
+### GET all
+GET http://localhost:3000/reservations
+Accept: application/json
+
+### GET one
+GET http://localhost:3000/reservations/64c7f704afd4e124a9fcc904
+Accept: application/json
+
+
+### Create reservation
+PATCH http://localhost:3000/reservations/64c7f704afd4e124a9fcc904
+Content-Type: application/json
+
+{
+  "placeId": "Athens"
+}
+
+
+### Delete reservation
+DELETE http://localhost:3000/reservations/64c7f704afd4e124a9fcc904
+Content-Type: application/json
+

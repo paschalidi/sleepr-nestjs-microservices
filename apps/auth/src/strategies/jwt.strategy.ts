@@ -17,7 +17,9 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
                 // this request here can be either from a user or from a microservice
                 // in technical terms either from http or rpc
                 (request: any) => {
-                    return request?.cookies?.Authentication || request?.Authentication
+                    return request?.cookies?.Authentication
+                        || request?.Authentication
+                        || request?.headers?.Authentication
                 }]),
             secretOrKey: configService.get<string>('JWT_SECRET')
         })

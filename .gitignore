@@ -2,7 +2,7 @@
 
 # compiled output
 /dist
-/node_modules
+**/node_modules
 
 # Logs
 logs
@@ -35,3 +35,4 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+k8s/sleepr/sleepr-394721-f61c3994beb5.json
